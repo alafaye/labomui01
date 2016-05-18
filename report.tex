@@ -48,6 +48,8 @@
 
 \usepackage{listings}
 
+
+
 %\usepackage{booktabs}
 %\usepackage{array}
 
@@ -139,26 +141,20 @@ pdfcreator=pdflatex]{hyperref}
 \begin{document}
 % JP
 %\frontmatter
-
 \lstset{
-    language=Python,                             % Code langugage
-    basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
-    keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
-    commentstyle=\color{gray},              % Comments font
-    numbers=left,                           % Line nums position
-    numberstyle=\tiny,                      % Line-numbers fonts
-    stepnumber=1,                           % Step between two line-numbers
-    numbersep=5pt,                          % How far are line-numbers from code
-    backgroundcolor=\color{lightlightgray}, % Choose background color
-    frame=none,                             % A frame around the code
-    tabsize=2,                              % Default tab size
-    captionpos=b,                           % Caption-position = bottom
-    breaklines=true,                        % Automatic line breaking?
-    breakatwhitespace=false,                % Automatic breaks only at whitespace?
-    showspaces=false,                       % Dont make spaces visible
-    showtabs=false,                         % Dont make tabls visible
-    morekeywords={uint32_t,uint8_t,uint16_t,time_spec_t,size_t,
-    clock_config_t},
+  language=C,                % choose the language of the code
+  numbers=left,                   % where to put the line-numbers
+  stepnumber=1,                   % the step between two line-numbers.        
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  tabsize=4,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=true,         % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
 }
 \pagestyle{empty}
 \pagenumbering{roman}

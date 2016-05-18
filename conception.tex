@@ -2,7 +2,7 @@
 \subsection{Partie 1}
 Pour faire clignoter la LED, il suffit de faire un XOR sur la bonne addresse du registre P1OUT. Il n'y a pas eu de difficultés majeures sur cette étape.
 
-INCLUDE CODE1
+\lstinputlisting{Code1.c}
 
 \subsection{Partie 2}
 Pour la seconde partie il a fallu créer une interruption afin de pouvoir changer l'état des LEDs 1 à 3.\\
@@ -14,14 +14,14 @@ Il ne faut pas oublier de remettre à zéro le bit du registre contenant le flag
 La principale difficulté que j'ai rencontré dans cette étape de la conception était l'oubli de la résistance interne rendant le bouton inutilisable pendant quelques secondes après chaque appui, le temps que la tension se dissipe.
 Un autre difficulté fût d'implémenter un anti-rebond pour ne pas prendre un compte les appuis "parasites" sur le bouton.
 
-INCLUDE CODE2
+\lstinputlisting{Code2.c}
 
 \subsection{Partie 3}
 Cette partie de la conception s'est révélée relativement similaire à la première. La principale différence se situtant dans la fonction d'interrution.
 
-INCLUDE CODE3
+\lstinputlisting{Code3.c}
 
 \subsection{Partie 4}
 Il s'agit du même code que pour la partie 2 mais avec un seul bouton.
 
-INCLUDE CODE4
+\lstinputlisting{Code4.c}
